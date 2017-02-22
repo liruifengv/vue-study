@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>todo app</title>
+</head>
+<body>
+<div id="todo-app">
+    <h1>todo app</h1>
+    <input type="text" placeholder="new todo" v-model="todo"/><button @click="add">add</button>
+    <ul>
+        <li v-for="(item,index) in items">{{item}}
+        <button @click="rm(index)">X</button></li>
+    </ul>
+</div>
+<script src="src/vue.js"></script>
+<script>
+    var app=new Vue({
+        el:"#todo-app",
+        data:{
+            items:['item 1','item 2','item 3'],
+            todo:''
+        },
+        methods:{
+            rm: function (i) {
+                this.items.splice(i,1)
+            },
+            add:function(){
+                if(this.todo){
+                    this.items.push(this.todo)
+                    this.todo=''
+                }
+            },
+        }
+    })
+</script>
+
+</body>
+</html>
