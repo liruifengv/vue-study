@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="src/vue.js"></script>
+</head>
+<body>
+<div id="app-2">
+    <span v-bind:title="message">
+        鼠标悬停几秒钟查看此处动态绑定的提示信息！
+    </span>
+</div>
+再次打开浏览器的 JavaScript 控制台输入 app2.message = '新消息'，
+
+<script>
+    var app2 = new Vue({
+        el:'#app-2',
+        data:{
+            message:'页面加载于'+new Date()
+        }
+    })
+</script>
+</body>
+</html>
