@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>方法事件处理器</title>
+</head>
+<body>
+<div id="example-2">
+    <!-- 'greet' 是在下面定义的方法名-->
+    <button v-on:click="greet">Greet</button>
+</div>
+
+<script src="src/vue.js"></script>
+<script>
+    var example2=new Vue({
+        el:'#example-2',
+        data:{
+            name:'Vue.js'
+        },
+        //在'methods'对象中定义方法
+        methods:{
+            greet:function(event){
+                // 'this'在这里指当前 Vue 实例
+                alert('Hello '+this.name+' !')
+                //'event'是原生 DOM 事件
+                alert(event.target.tagName)
+            }
+        }
+    })
+
+    example2.greet()
+</script>
+</body>
+</html>

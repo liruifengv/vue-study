@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>显示过滤排序结果</title>
+</head>
+<body>
+<ul id="sort">
+    <li v-for="n in everyNumbers">{{n}}</li>
+</ul>
+
+
+<script src="src/vue.js"></script>
+<script>
+    var vue=new Vue({
+                data:{
+                    numbers:[1,2,3,4,5]
+                },
+                methods:{
+                    even:function(numbers){
+                        return numbers.filter(function(number){
+                            return number%2===0
+                        })
+                    }
+                }
+            })
+
+
+</body>
+</html>
