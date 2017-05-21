@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>router test</title>
+
+</head>
+<style>
+
+</style>
+<body>
+<div id="app">
+    <h1>Hello App!</h1>
+    <p>
+        <router-link to="/foo">Go to Foo</router-link>
+        <router-link to="/bar">Go to Bar</router-link>
+    </p>
+    <router-view></router-view>
+</div>
+<script src="vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script>
+    //定义组件
+    const Foo={ template:'<div>foo</div>' }
+    const Bar={ template:'<div>bar</div>' }
+    //定义路由
+    const routes=[
+        {path:'/foo',component:Foo},
+        {path:'/bar',component:Bar}
+    ]
+    //创建 route 实例
+    const router=new VueRouter({
+        routes:routes
+    })
+    //创建和挂载根实例
+    const app=new Vue({
+        router
+    }).$mount('#app')
+</script>
+
+
+</body>
+</html>
