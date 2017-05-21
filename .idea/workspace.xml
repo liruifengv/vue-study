@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1a3500a-3a71-461a-aeb3-a38571449496" name="Default" comment="初用 vue-cli">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routertest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vueRouter.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vue-study.iws" />
@@ -33,11 +33,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routertest.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routertest.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routertest.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-56">
               <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vueRouter.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vueRouter.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -108,6 +118,7 @@
         <option value="$PROJECT_DIR$/demo.html" />
         <option value="$PROJECT_DIR$/routertest1.html" />
         <option value="$PROJECT_DIR$/routertest.html" />
+        <option value="$PROJECT_DIR$/vueRouter.html" />
       </list>
     </option>
   </component>
@@ -296,15 +307,15 @@
       <workItem from="1494919425171" duration="45000" />
       <workItem from="1495019861320" duration="55000" />
       <workItem from="1495166038259" duration="5879000" />
-      <workItem from="1495354945708" duration="1436000" />
+      <workItem from="1495354945708" duration="2360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9108000" />
+    <option name="totallyTimeSpent" value="10032000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23206443" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -352,13 +363,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -672,6 +676,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-56">
           <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vueRouter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding />
         </state>
       </provider>
