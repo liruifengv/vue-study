@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网格组件</title>
+    <script src="vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--组件模板-->
+<script type="text/x-template" id="grid-template">
+    <table>
+        <thead>
+        <tr>
+            <th v-for="key in columns" @click="sortBy(key)" :class="{active:sortKey==key}">
+                {{key|capitalize}}        <!-- 过滤器 -->
+                <span class="arrow" :class="sortOrders[key]>0?'asc':'dsc'"></span>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="entry in filteredData">
+            <td v-for="key in columns">
+                {{entry[key]}}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</script>
+
+<!--demo root element-->
+<div id="demo">
+    <form id="search">
+        Search <input name="query" v-model="searchQuery">
+    </form>
+
+    <!--     demo-grid 组件      -->
+    <demo-grid
+        :data="gridData"
+        :columns="gridColumns"
+        :filter-key="searchQuery">
+    </demo-grid>
+</div>
+<script src="index.js"></script>
+
+</body>
+</html>
