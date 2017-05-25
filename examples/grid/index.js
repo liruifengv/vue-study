@@ -19,7 +19,7 @@ Vue.component('demo-grid',{
             sortOrders:sortOrders
         }
     },
-    computed:{
+    computed:{                                         //计算属性
         filteredData:function () {
             var sortKey=this.sortKey
             var filterKey=this.filterKey&&this.filterKey.toLowerCase()
@@ -47,7 +47,7 @@ Vue.component('demo-grid',{
             return str.charAt(0).toUpperCase()+str.slice(1)
         }
     },
-    methods:{                                     //排序函数
+    methods:{
         sortBy:function (key) {
             this.sortKey=key
             this.sortOrders[key]=this.sortOrders[key]*-1

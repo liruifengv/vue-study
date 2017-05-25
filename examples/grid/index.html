@@ -15,7 +15,7 @@
         <tr>
             <th v-for="key in columns" @click="sortBy(key)" :class="{active:sortKey==key}">
                 {{key|capitalize}}        <!-- 过滤器 -->
-                <span class="arrow" :class="sortOrders[key]>0?'asc':'dsc'"></span>
+                <span class="arrow" :class="sortOrders[key]>0?'asc':'dsc'"></span>     <!-- 三角形方向-->
             </th>
         </tr>
         </thead>
