@@ -5,9 +5,14 @@
     <title>整数迭代v-for</title>
 </head>
 <body>
-<div>
+<div id="app">
     <span v-for="n in 10">{{n}}</span>
 </div>
-
+<script src="vue/dist/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app'
+    })
+</script>
 </body>
 </html>

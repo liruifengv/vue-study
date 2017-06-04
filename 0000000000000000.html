@@ -5,6 +5,24 @@
     <title>Title</title>
 </head>
 <body>
-aaaaa
+<div id="box">
+    <input type="button" value="toggle" v-on:click="toggle()">
+    <br>
+    <div v-show="isShow" style="width: 100px;height: 100px;background:#42b983"></div>
+</div>
+<script src="vue/dist/vue.js"></script>
+<script>
+    var vm=new Vue({
+        el:'#box',
+        data:{
+            isShow:false,
+        },
+        methods:{
+            toggle:function () {
+                this.isShow = !this.isShow
+            }
+        }
+    })
+</script>
 </body>
 </html>
