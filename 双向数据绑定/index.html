@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Self-Vue</title>
+    <style>
+        #app{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <h2>{{title}}</h2>
+    <input v-model="name">
+    <h1>{{name}}</h1>
+    <button v-on:click="clickMe">Click me!</button>
+</div>
+
+<script src="observe.js"></script>
+<script src="selfVue.js"></script>
+<script src="watcher.js"></script>
+<script src="compile.js"></script>
+<script>
+    new selfVue({
+        el:'#app',
+        data:{
+            title:'Hello World',
+            name:'cacoo'
+        },
+        methods:{
+            clickMe:function () {
+                this.title = 'Hello World';
+            }
+        },
+        mounted:function () {
+            window.setTimeout(()=>{
+                this.title = '你好'
+            },3000);
+        }
+    });
+
+</script>
+</body>
+</html>
